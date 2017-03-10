@@ -1,0 +1,86 @@
+.home-detail .home-detail-header{
+    height: 2.74115rem;
+    width: 16.08939rem;
+    border-bottom: 1px solid lightgray;
+}
+.home-detail .home-detail-input{
+    font-size: 0.5959rem;
+    padding-left: 0.5959rem;
+    margin-top: 0.5959rem;
+    margin-left: 0.44693rem;
+    border: 1px solid lightgray;
+    border-top: 0.05959rem solid lightgray;
+    border-radius:0.05959rem 0.05959rem 0 0 ;
+    width: 10.84544rem;
+    height:1.48976rem;
+    box-sizing: border-box;
+}
+.home-detail .home-detail-button{
+    margin-top: 0.5959rem;
+    width:2.68156rem ;
+    height: 1.48976rem;
+    margin-left: 1.19181rem;
+}
+.home-detail ion-content{
+    top:0;
+}
+.home-detail .z-block{
+    background-color: white;
+    width: 16.08939rem;
+    height: 0.35754rem;
+    border-bottom: 1px solid lightgray;
+    margin-top: 2.97952rem;
+}
+.home-detail .z-title{
+    margin-top: 0.74488rem;
+    margin-bottom: 0;
+    font-size: 0.65549rem;
+    color: #11c1f3;
+    padding-left:0.5959rem ;
+}
+.home-detail .z-item{
+    margin-top: 0.89385rem;
+    height:3.33706rem;
+    width: 16.08939rem;
+    padding-left:0.5959rem ;
+    /*background-color: #11c1f3;*/
+}
+.z-item img{
+    width: 3.33706rem;
+    clear: both;
+    height: 100%;
+}
+.home-detail .z-picture-price{
+    display: inline-block;
+    margin-left: 0.23836rem;
+    vertical-align: top;
+    width: 10.72626rem;
+    box-sizing: border-box;
+    height: 100%;
+}
+.z-picture-price h3{
+    margin-top: 0.29795rem;
+}
+.z-picture-price p,.z-picture-price .z-name{
+    margin-top: 0.29795rem;
+    display: block;
+}
+.home-detail .z-iprice {
+    margin-left: 6.70391rem;
+}
+.home-detail .z-friend{
+    text-align: center;
+    margin-top: 0.89385rem;
+    width: 16.08939rem;
+    height: 1.19181rem;
+    font-size: 0.47672rem;
+    color: #11c1f3;
+}
+.z-friend .z-friend-span{
+    margin-left: 0.5959rem;
+}
+.z-friend  h4{
+    color: gray;
+    font-size: 0.47672rem;
+
+}

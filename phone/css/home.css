@@ -1,0 +1,35 @@
+/*轮播图样式*/
+.home ion-slide img{
+    width: 33.75rem;
+    height:305px;
+}
+/*内容*/
+.home .home-title{
+    background-color: lightgray;
+    margin-bottom: 1px;
+    height:180px;
+    width:540px;
+}
+.home .home-ion{
+    line-height: 50%;
+    text-align: center;
+    background-color: white;
+    float: left;
+    width:180px;
+    height: 180px;
+    /*margin-right: 1px;*/
+}
+.home .home-ion:nth-child(3n+2){
+  border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+
+}
+.home  .ion-model-s::before{
+    color: #11c1f3;
+    font-size: 45px;
+}
+.home .home-button{
+    width: 100%;
+    height: 50%;
+    font-size: 45px;
+}

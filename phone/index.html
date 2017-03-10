@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" >
+<head>
+    <meta charset="UTF-8">
+    <title>阿贝旅游网</title>
+    <!--<meta name="viewport" content="width=device-width,initial-scale=0.33, minimum-scale=0.33, maximum-scale=0.33, user-scalable=no"/>-->
+    <meta name="viewport" content="width=device-width,initial-scale=0.67, minimum-scale=0.67, maximum-scale=0.67, user-scalable=no"/>
+
+    <script src="bin/node_modules/jquery/dist/jquery.js"></script>
+    <script src="bin/js/angular/angular.js"></script>
+    <script src="http://cdn.bootcss.com/angular-ui-router/1.0.0-beta.3/angular-ui-router.js"></script>
+    <script src="https://cdn.bootcss.com/ionic/1.3.2/js/ionic.bundle.min.js"></script>
+    <script src="bin/node_modules/requirejs/require.js" data-main="app.js"></script>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/ionic/1.3.2/css/ionic.min.css">
+    <link rel="stylesheet" href="css/home2.css">
+    <link rel="stylesheet" href="css/home-detail.css">
+    <link rel="stylesheet" href="css/home-detail-buy3.css">
+
+    <style>
+
+    </style>
+    <script>
+
+
+    </script>
+</head>
+<body>
+
+
+
+<ui-view name="home">
+
+</ui-view>
+
+
+</body>
+</html>
+<script>
+    var app = angular.module("myApp",["ionic"])
+    app.config(function ($stateProvider,$urlRouterProvider) {
+        $stateProvider.state("home",{
+            url:"/home",
+            views:{
+                "home":{
+                    templateUrl:"js/template/home.html",
+                    controller:function ($scope) {
+                        $scope.items = {
+                            title1:{
+                                title11:{
+                                    img:"ion-model-s",
+                                    title:"门票预订",
+                                },
+                                title12:{
+                                    img:"ion-model-s",
+                                    title:"门票预订",
+                                },
+                                title13:{
+                                    img:"ion-model-s",
+                                    title:"门票预订",
+                                }
+                            },
+                            title2:{
+                                title21:{
+                                    img:"ion-model-s",
+                                    title:"门票预订",
+                                },
+                                title22:{
+                                    img:"ion-model-s",
+                                    title:"门票预订",
+                                },
+                                title23:{
+                                    img:"ion-model-s",
+                                    title:"门票预订",
+                                }
+                            },
+                            title3:{
+                                title31:{
+                                    img:"ion-model-s",
+                                    title:"门票预订",
+                                },
+                                title32:{
+                                    img:"ion-model-s",
+                                    title:"门票预订",
+                                },
+                                title33:{
+                                    img:"ion-model-s",
+                                    title:"门票预订",
+                                }
+                            },
+                        }
+
+                    }
+                }
+            }
+        })
+        $stateProvider.state("home-detail",{
+            url:"/detail",
+            views:{
+                "home":{
+                    templateUrl:"js/template/home-detail.html",
+                    controller:function ($scope) {
+                        $scope.datas = {
+                            dataObj: {
+                                img: "../../phone/img/5.jpg",
+                                hName: "九寨沟风景区",
+                                spanName: "AAAAA景区",
+                                pName: "九寨沟县",
+                                zPrice: "￥80元起",
+                            },
+                            dataObj1: {
+                                img: "../../phone/img/5.jpg",
+                                hName: "九寨沟风景区",
+                                spanName: "AAAAA景区",
+                                pName: "九寨沟县",
+                                zPrice: "￥80元起",
+                            },
+                            dataObj2: {
+                                img: "../../phone/img/5.jpg",
+                                hName: "九寨沟风景区",
+                                spanName: "AAAAA景区",
+                                pName: "九寨沟县",
+                                zPrice: "￥80元起",
+                            }
+                        }
+
+                    }
+                }
+            }
+        })
+        $stateProvider.state("home-detail-buy",{
+            url:"/buy",
+            views:{
+                "home":{
+                    templateUrl:"js/template/home-detail-buy.html",
+                    controller:function ($scope) {
+                        $scope.datas = {
+                            title1: {
+                                hName: "成人票",
+                                array: {
+                                    title11: "全价套票",
+                                    title12: "单门票价",
+                                    title13: "观光车票",
+                                }
+                            },
+                            title2: {
+                                hName: "儿童票",
+                                array: {
+                                    title21: "全价套票",
+                                    title22: "单门票价",
+                                    title23: "观光车票",
+                                }
+                            }
+                        }
+                        $scope.paragraphs = {
+                                title: "风景区介绍",
+                                paragraph: " 锅盔山景区始建于2010年，全长10.8公里，如一条玉带，蜿蜒盘旋在大锅盔山腰之际。景区群山环抱、内古树参天、绿草如茵；使人置身于鸟鸣深涧里，清泉石上流的优美诗意中。2014年按照省委建设“大亚布力”总体要求，在（ ）优美自然环境的基础上增加景区的趣味性、互动性。聘请浙江远游规划设计院从新进行规划，新建了奇妙旅程、奇力小屋、时空隧道、万丈深渊、镜宫、5D影院、儿童城堡，新建全长1020米滑道，高空滑索、奇妙迷宫和野外拓展营地。"
+                        }
+                    }
+                }
+            }
+        })
+        $urlRouterProvider.otherwise("/home")
+    })
+</script>
+<script src="js/directive/directive.js"></script>
+<script>
+    (function (doc,win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in win? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth ) return;
+                        docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                        console.log(
+                                docEl.style.fontSize
+
+                        )
+                    };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false)
+
+    })(document,window)
+
+</script>
+

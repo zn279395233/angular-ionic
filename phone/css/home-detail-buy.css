@@ -1,0 +1,138 @@
+
+/*轮播图样式*/
+.home-detail-buy ion-slide img{
+    width: 540px;
+    height:354px;
+}
+.home-detail-buy .z-footer{
+    line-height: 56px;
+    height: 56px;
+    background-color: orange;
+}
+.home-detail-buy .z-bgColor{
+    position: absolute;
+    top:316px;
+    width: 540px;
+    height: 40px;
+    background-color: black;
+    z-index: 10;
+    opacity:0.5
+}
+.home-detail-buy .z-return-left{
+    padding:10px 0 0 10px;
+    z-index: 10;
+    position: absolute;
+    height: 40px;
+}
+.home-detail-buy .z-return-right{
+    padding:10px 10px 0 0;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+}
+.z-return-left a,.z-return-right a{
+    background-color: gray;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.z-return-left a::after,.z-return-left a::before{
+
+}
+.home-detail-buy .z-return-left a::before{
+    padding-left: 10px;
+}
+.home-detail-buy .z-return-right a::before {
+    padding-left: 15px;
+}
+
+.z-form button{
+    width: 30px;
+}
+.home-detail-buy .z-form input {
+    padding-left: 40px;
+    display: inline-block;
+    width: 80px;
+}
+.home-detail-buy .z-form{
+    float: right;
+}
+.home-detail-buy .item{
+    line-height: 34px;
+}
+.home-detail-buy .z-total{
+    padding-left: 20px;
+    width: 66.7%;
+}
+.home-detail-buy .z-reserve{
+    text-align: center;
+    width: 33.3%;
+}
+.home-detail-buy .z-polls{
+    margin-left: 30%;
+}
+.home-detail-buy .z-occupy{
+    display: inline-block;
+    width: 17px;
+
+}
+.home-detail-buy .z-alert {
+    margin-left: 110px;
+    font-size: 16px;
+}
+.home-detail-buy .z-alert-li{
+    border: 0;
+}
+.home-detail-buy .z-data {
+    border-top: 0;
+}
+.home-detail-buy .z-restart{
+    height: 56px;
+    right: 0;
+    bottom: 0;
+    vertical-align: bottom;
+    position: absolute;
+    line-height: 56px;
+    width: 162px;
+    background-color: #11c1f3;
+}
+.home-detail-buy .z-ion{
+    margin-right: 30px;
+    vertical-align: middle;
+    display: inline-block;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    border: 1px solid lightgreen;
+    text-align: center;
+
+}
+.z-ion span{
+    margin:5px auto 0;
+    display: block;
+    background-color: red;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+.z-content-detail p{
+    padding: 10px 10px ;
+    color: #666666;
+    font-size: 16px;
+    line-height: 2em;
+    text-indent: 2em;
+}
+.z-content-detail hr{
+   border:1px solid #11c1f3;
+}
+.z-content-detail li{
+    line-height: 2em;
+    text-indent: 2em ;
+    color: #666666;
+    font-size: 16px;
+}
+.home-detail-buy .z-list .item{
+    border: 0;
+}
+

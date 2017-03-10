@@ -1,0 +1,30 @@
+<div class="home">
+    <!--//轮播图-->
+        <ion-slide-box  does-continue="true" slide-interval="300" auto-play="true">
+            <ion-slide>
+                <img src="../../phone/img/1.jpg" alt="">
+            </ion-slide>
+            <ion-slide>
+                <img src="../../phone/img/2.jpg" alt="">
+            </ion-slide>
+            <ion-slide on-slide-changed="slideHasChanged(index)">
+                <img src="../../phone/img/3.jpg" alt="">
+            </ion-slide>
+            <ion-slide>
+                <img src="../../phone/img/4.jpg" alt="">
+            </ion-slide>
+            <ion-slide>
+                <img src="../../phone/img/5.jpg" alt="">
+            </ion-slide>
+        </ion-slide-box>
+    <!--内容-->
+        <div class="home-title" ng-repeat="item in items">
+            <div ng-repeat="ite in item" class="home-ion" ui-sref="home-detail">
+                <!--<span class="icon ion-loading-c"></span>-->
+                <button class="button home-button">
+                    <i class="icon ion-model-s"></i>
+                </button>
+                <h3>{{ite.title}}</h3>
+            </div>
+        </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="home-detail">
+    <ion-header-bar>
+        <!--风景搜索-->
+    <div class="bar bar-header home-detail-header">
+        <input type="search" placeholder="区县或名称模糊查询" class="home-detail-input">
+        <button class="button button-assertive home-detail-button" >
+            搜索
+        </button>
+    </div>
+    </ion-header-bar>
+    <ion-content>
+        <div class="z-block">
+        </div>
+        <!--风景区选择-->
+        <h3 class="z-title">风景区推荐</h3>
+        <div class="z-item" ng-repeat="data in datas" ui-sref="home-detail-buy">
+            <img src="../../phone/img/5.jpg" alt="">
+            <div class="z-picture-price">
+                <h3>{{data.hName}}</h3>
+                <span class="z-name">AAAAA景区</span>
+                <p><span>{{data.pName}}</span><span class="z-iprice">{{data.zPrice}}</span></p>
+            </div>
+
+        </div>
+        <!--客服热线-->
+        <div class="z-friend">
+            <p><span>服务热线：</span><span class="z-friend-span">400-088-6969转1</span></p>
+            <h4>啊啊啊啊啊</h4>
+        </div>
+
+    </ion-content>
+
+</div>

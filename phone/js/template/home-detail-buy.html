@@ -1,0 +1,120 @@
+<div class="home-detail-buy">
+
+    <!--内容-->
+    <ion-content>
+        <p class="z-return-left">
+                <a class="button icon-left ion-chevron-left button-clear button-dark button-outline z-go-left" ui-sref="home-detail" ></a>
+        </p>
+        <p class="z-return-right">
+            <a class="button icon-left ion-chevron-right button-clear button-dark button-outline z-go-right" ui-sref="home-detail" ></a>
+        </p>
+        <!--//轮播图-->
+        <ion-slide-box  does-continue="true" slide-interval="300" auto-play="true">
+            <ion-slide>
+                <img src="../../phone/img/1.jpg" alt="">
+            </ion-slide>
+            <ion-slide>
+                <img src="../../phone/img/2.jpg" alt="">
+            </ion-slide>
+            <ion-slide on-slide-changed="slideHasChanged(index)">
+                <img src="../../phone/img/3.jpg" alt="">
+            </ion-slide>
+            <ion-slide>
+                <img src="../../phone/img/4.jpg" alt="">
+            </ion-slide>
+        </ion-slide-box>
+        <div class="z-bgColor">
+            <span >九寨沟</span>
+            <span>2/4</span>
+        </div>
+        <ul class="list">
+            <a class="item item-icon-left item-icon-right z-data" href="#">
+                游览（消费）日期 <span>游览消费日期</span>
+                <i class="icon ion-chevron-right"></i>
+            </a>
+          <li class="item item-icon-left z-alert-li">
+                  <i class="icon ion-android-apps z-alert"> 旅游旺季，一天最多只能预定20张</i>
+          </li>
+            <div ng-repeat="data in datas">
+            <li class="item" >
+                {{data.hName}}
+                    <span class="z-polls">
+                       <span> 点击</span>
+                    <i class="icon ion-arrow-right-b"></i>
+                    查看票类详情
+                       </span>
+            </li>
+            <li class="item" ng-repeat="dat in data.array">
+                {{dat}}
+                <span class="z-polls">
+                    <span class="z-occupy"></span>
+                      <i class="icon ion-arrow-right-b">
+                    160元/张
+                     </i>
+                </span>
+                <span  class="z-form" ng-init="picNum=1">
+                    <button class="button-bar-inline button-assertive"  ng-click="(picNum =(picNum <=1 ?'':picNum-1))" my-total>-</button>
+                    <input type="text" ng-model="picNum">
+                    <button class="button-bar-inline" ng-click="(picNum = (picNum <= 0 ? 1:picNum + 1))"  my-total>+</button>
+                </span>
+              </li>
+            </div>
+        </ul>
+        <div class="list z-list">
+         <div class="z-content-detail" >
+                <div class="item item-divider" >
+                    <span class="z-ion"><span></span></span>{{paragraphs.title}}
+                    <hr>
+                </div>
+              <p>
+                  {{paragraphs.paragraph}}
+              </p>
+            </div>
+            <div class="z-content-detail">
+                <div class="item item-divider" >
+                    <span class="z-ion"><span></span></span>{{paragraphs.title}}
+                    <hr>
+                </div>
+                <p>
+                <ol>
+                   <li>1.本产品限网上及手机客户端预订，不接受电话预订。</li>
+                   <li>2.一人一票，门票均不含保险。</li>
+                   <li>3.优惠票对象：实行门票半价优惠的范围和群体
+                       <ol>
+                           <li>（一）青少年（儿童、学生、未成年人）：6周岁（不含6周岁）—18周岁（含18周岁）未成年人、全日制大学本科及以下学历学生、持《港澳居民来往内地通行证》、《台湾居民来往大陆通行证》或学生证等有效证件的香港、澳门、台湾入境游青少年享受半票优惠。</li>
+                           <li>（二）老年人：60周岁（含60周岁）至70周岁（不含70周岁）的老年人享受半票优惠。</li>
+                           <li>（三）宗教界人士：持省外省级宗教团体统一印发的皈依证等有效证件的同一宗教信教群众享受半票优惠。</li>
+                       </ol>
+
+                   </li>
+                   <li>4.免票对象：实行门票免票优惠的范围和群体：
+                       <ol>
+                           <li>（一）未成年人：6周岁（含6周岁）以下或身高1.2米（含1.2米）以下的儿童享受门票和观光车票免票。</li>
+                           <li>（二）老年人：70周岁（含70周岁）以上老年人享受门票免票，需另购全价观光车票。</li>
+                           <li>（三）现役军人、残疾军人和离休干部享受门票免票，需另购全价观光车票。</li>
+                           <li>（四）残疾人：持有效证件的残疾人士享受门票免票，需另购全价观光车票。</li>
+                       </ol>
+                   </li>
+                <li>5.温馨提示：淡季期间需要二次进沟的游客，须在第一次进沟前前往售票厅办理二次进沟相关手续。</li>
+                <li>6.客服服务热线：400-088-6969转1。</li>
+               </ol>
+                </p>
+
+            </div>
+        </div>
+
+    </ion-content>
+    <ion-footer-bar class="z-footer">
+        <div class="z-total" >
+            <span >
+
+                总计{{totals}}元
+            </span>
+        </div>
+        <div class="z-reserve">
+            <a class="ion icon-right">
+                <i class="ion ion-checkmark z-restart">  预定</i>
+            </a>
+        </div>
+    </ion-footer-bar>
+</div>
